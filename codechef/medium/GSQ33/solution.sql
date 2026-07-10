@@ -1,6 +1,2 @@
-/* Write a query to check the entries in the table.
-Restrict your query to return 3 rows. */
-select * from Orders
-limit 3;
-
-
+/* Write a query to output the distinct pin-codes from where orders have been received. */
+select DISTINCT  address_pincode from Orders;
