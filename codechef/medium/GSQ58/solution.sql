@@ -1,4 +1,7 @@
-/* Write a query to output the following:
-- Round the column **Payout** to 2 decimal places. */
+/* **Debug this query** to output the minimum and maximum value of payout, round to 2 decimal places. */
 
-select round(Payout, 2) as payout from employee;
+
+select round(min(Payout),2) as 'min_pay',
+    round(max(Payout),2) as 'max_pay'
+from employee;
+
